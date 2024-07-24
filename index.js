@@ -33,7 +33,7 @@ const server = app.listen(port, () => {
 
 
 // Connect to MongoDB
-const DATABASE_URL = process.env.DB_URL || 'mongodb://127.0.0.1:27017'
+const DATABASE_URL = process.env.DB_URL || 'mongodb+srv://swati:anch@cluster0.8i9fpcf.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
 const DATABASE = process.env.DB || 'fox_crm'
 
 db(DATABASE_URL, DATABASE);
