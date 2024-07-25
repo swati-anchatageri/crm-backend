@@ -18,9 +18,7 @@ app.use(cors())
 app.use('/api', route);
 
 
-app.get('/', async (req, res) => {
-    res.send('Welcome to my world...')
-});
+app.get('/api', route);
 
 // Get port from environment and store in Express.
 
