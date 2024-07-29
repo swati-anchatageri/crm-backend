@@ -27,7 +27,7 @@ app.get('/', async (req, res) => {
 const server = app.listen(port, () => {
     const protocol = (process.env.HTTPS === true || process.env.NODE_ENV === 'production') ? 'https' : 'http';
     const { address, port } = server.address();
-    const host = address === '::' ? 'https://real-estate-crm-wine.vercel.app/auth/sign-in' : address;
+    const host = address === '::' ? 'https://66a77f04cdb44c2baa5d2baf--enchanting-choux-b6a6d4.netlify.app/auth/sign-in' : "";
     console.log(`Server listening at ${protocol}://${host}:${port}/`);
 });
 
