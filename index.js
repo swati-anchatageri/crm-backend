@@ -32,7 +32,7 @@ const server = app.listen(port, () => {
 
 
 // Connect to MongoDB
-const DATABASE_URL = process.env.DB_URL || 'mongodb+srv://swati:anch@cluster0.8i9fpcf.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
-const DATABASE = process.env.DB || 'Fox-CRM'
+const DATABASE_URL = process.env.DB_URL
+const DATABASE = process.env.DB
 
 db(DATABASE_URL, DATABASE);
