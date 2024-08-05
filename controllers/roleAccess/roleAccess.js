@@ -25,22 +25,7 @@ const add = async (req, res) => {
         else {
             const createdDate = new Date();
 
-            const titles = [
-                "Emails",
-                "Calls",
-                "Meetings",
-                "Tasks",
-                "Properties",
-                "Contacts",
-                "Leads",
-                "Documents",
-                "Email Template",
-                "Opportunities",
-                "Account",
-                "Quotes",
-                "Invoices",
-            ];
-
+            const titles = ['Emails', 'Calls', 'Meetings', 'Tasks', 'Properties', 'Contacts', 'Leads'];
             const customModules = Array.from(await customField.find(), item => item.moduleName);
 
             async function processModules() {
